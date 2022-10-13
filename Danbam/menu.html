@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- atas -->
+    <div class="navbar">
+        <div class="judul">
+            <img src="imag/smoll_logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="menu">
+        <div><a href="home.html">Home</a></div>
+        <div><a href="menu.html">Menu</a></div>
+        <div><a href="About Us.html">About us</a></div>
+        <div class="location">
+            Location
+            <div class="dropdown">
+                <div><a href="location-daegu.html">Daegu</a></div>
+                <div><a href="location-incheon.html">Incheon</a></div>
+                <div><a href="location-seoul.html">Seoul</a></div>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="Registrasi/ContactUs_DB_V2.html">Contact Us</a>
+        </div>
+        
+    </div>
+
+    <div class="tengah">
+        <img src="imag/makanan3.png" alt="">
+        <div class="header">
+            <h1>Menu</h1>
+            <p>In this page, we present to you our best</p>
+            <p>foods and beverages that has been recommended</p>
+            <p>by many of our customers.Here at Danbam, we create</p>
+            <p>all of our foods and drinks handmade and with original</p>
+            <p>Korean ingredients and added with our own flair</p>
+        </div>
+    </div>
+
+    <div class="antara1">
+        <img src="imag/food-logo.png" alt="">
+        <div class="description">
+            <p>Foods and Beverages</p>
+        </div>
+    </div>
+    
+
+    <!-- gambar -->
+    <div class="slide-container">
+        <div class="mySlides fade">
+            <img src="Foods/Dalgona.png" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Foods/kimchi.png" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Foods/DdukbokkiV2.png" alt="">
+        </div>
+
+        <!-- next&prev -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- dot -->
+        <div class="titik">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- footer bawah -->
+    <!-- <div class="footer">
+        <p>Follow us</p>
+        <div class="sosmed">
+            <img src="imag/youtube.png" alt="">
+            <img src="imag/Transparent_insta.png" alt="">
+            <img src="imag/twitter-50.jpg" alt="">
+        </div>
+    </div> -->
+
+
+    <!-- javascript -->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <footer>
+        <div class="dalam">
+         <div class="Tulisan_Follow">
+             <p> Follow us at:</p>
+         </div>
+         <div class="logo">
+             <div class="logo1">
+                    <img src="imag/Transparent_insta.png" alt="">
+                  <p>@dan_bam</p>
+              </div>
+                <div class="logo2">
+                 <img src="imag/Transparenttwitter-50.png" alt="">
+                    <p>@dan_bam</p>
+                </div>
+                <div class="logo3">
+                    <img src="imag/youtube-logo-transparent-png-pictures-transparent-background-youtube-logo-11562856729oa42buzkng.png" alt="">
+                       <p>@DANBAM</p>
+                </div>
+         </div>
+     </div>
+    </footer>
+</body>
+</html>

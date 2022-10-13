@@ -1,0 +1,276 @@
+/* Agar "COMPATIBLITY */
+/* ================================================= */
+/* 1rem itu adalah 16px (tergantung root) */
+/* 1em itu juga bisa 16 px tp tergantung parent */
+/* Klo mamu main bagus: vw dan %*/
+/* Klo % ikutin zoom */
+/* VW itu tergantung window */
+/* vw buat font dan margin*/
+/*klo gambar %*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* atas */
+.menu{
+    display: flex;
+    background-color: #363940 ;
+    width: auto;
+    
+    align-items: center;
+}
+.menu div:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    transition: border-bottom 0.5s;
+    /* garis bawah glow */
+}
+
+.menu a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    transition: border-bottom 0.5s;
+    
+}
+
+.menu div{
+    margin-right: 5px;
+    /* jarak */
+    text-decoration: none;
+    /* font */
+    color: white;
+    border-bottom: 7px solid transparent;
+    transition: border-bottom 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    /* padding: 0.4vw; */
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 15px;
+    /* fonting */
+    /* color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 20px; */
+}
+
+
+.navbar{
+    background-color: #363940;
+    margin-bottom: 5px;
+}
+
+.menu > div{
+    margin-left: 20px;
+    /* fonting */
+    /* color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 20px; */
+    color: white;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    padding: 2px;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 20px;
+}
+
+/* dropdown */
+
+.location{
+    position: relative;
+}
+.dropdown{
+    display: none;
+}
+
+.location:hover > .dropdown{
+    display: block;
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+    z-index: 1;
+    background-color: #1f2024;
+    padding: 3px;
+}
+
+.dropdown div{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+/* pembatas */
+.isi{
+    background-color:#1f2024 ;
+}
+
+.atas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-image img{
+    margin-top:15px;
+    height: 800px;
+}
+.header h1{
+    /* font */
+    color: #fdfdf9;
+    font-size: 60px;
+    line-height: 1em;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+}
+
+.card img{
+    height: 200px;
+    margin: 10px;
+}
+.recommendation{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 200px;
+    margin-top: 20px;
+}
+.card{
+    margin-top: 4px;
+    outline: 1px solid rgba(234,233,2,0.52);
+    display: flex;
+    place-items: center;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+}
+
+.local h1{
+    text-align: center;
+    margin: 4vw;
+    
+    /* font */
+    color: #fdfdf9;
+    font-size: 50px;
+    line-height: 5px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+}
+.tempat{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.tempat div{
+    margin: 20px;
+    /* font */
+    color: #fdfdf9;
+    font-size: 50px;
+    line-height: 10px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    margin-bottom: 50px;
+}
+
+.tempat div:hover{
+    margin: 20px;
+    /* font */
+    color: #fdfdf9;
+    font-size: 52px;
+    line-height: 10px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    margin-bottom: 50px;
+    
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #363940;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    margin-left: 50px;
+}
+.logo p{
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.logo1 img{
+    height: 75px;
+    
+}
+.logo1 p{
+
+    color: #fdfdf9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.logo2 img{
+    height: 75px;
+}
+
+.logo2 p{
+    color: #fdfdf9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.logo1 img:hover{
+
+    transition: 0.5s;
+    height: 85px;
+}
+.logo2 img:hover{
+    
+    transition: 0.5s;
+    height: 85px;
+}
+.logo3 img{
+    height: 75px;
+}
+
+.logo3 p{
+
+    color: #fdfdf9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.logo3 img:hover{
+    
+    transition: 0.5s;
+    height: 85px;
+}
+.Tulisan_Follow p{
+    margin-top:10px;
+    margin-bottom:10px;
+    align-content: center;
+    font-size: 25px;
+    margin-left: 20px;
+    color:#fdfdf9; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tempat a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 7px rgba(234,233,2,0.52);
+    transition: border-bottom 0.5s;
+}
